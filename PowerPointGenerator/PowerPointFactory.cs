@@ -56,7 +56,7 @@ namespace PowerPointGenerator
         ///     Determine the appropriate image extension to use.
         /// </summary>
         /// <param name="imagefilePath"></param>
-        /// <returns></returns>
+        /// <returns></returns>  
         private static string ImageExtension(string imagefilePath)
         {
             var imageExt = Path.GetExtension(imagefilePath);
