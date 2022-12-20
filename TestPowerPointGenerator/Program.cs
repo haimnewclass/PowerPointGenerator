@@ -15,10 +15,7 @@ namespace TestPowerPointGenerator
             var powerPointGenerator = new PowerPointGenerator.PowerPointFactory(@"c:\a\aaa.pptx");
            
             
-            var imageFilePaths = Directory.GetFiles(@"c:\a\", "*.jpg").ToList();
-            powerPointGenerator.CreateTitleAndImageSlides(imageFilePaths);
-            
-            // powerPointGenerator.CreateTitleAndImageSlides
+       
 
         }
     }
