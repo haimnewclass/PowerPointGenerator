@@ -12,11 +12,14 @@ namespace TestPowerPointGenerator
     {
         static void Main()
         {
-            var powerPointGenerator = new PowerPointFactory(Path.Combine(@"c:\a\ppt.pptx"));
-            var imageFilePaths = Directory.GetFiles(@"..\..\..\Alba", "*.jpg").ToList();
-            powerPointGenerator.CreateTitleAndImageSlides(imageFilePaths);
-            // powerPointGenerator.CreateTitleAndImageSlides
+            var powerPointGenerator = new PowerPointGenerator.PowerPointFactory(@"c:\a\aaa.pptx");
            
+            
+            var imageFilePaths = Directory.GetFiles(@"c:\a\", "*.jpg").ToList();
+            powerPointGenerator.CreateTitleAndImageSlides(imageFilePaths);
+            
+            // powerPointGenerator.CreateTitleAndImageSlides
+
         }
     }
 }
